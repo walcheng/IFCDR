@@ -1,0 +1,70 @@
+{
+    "use_cuda": 1,
+    "root": "./data/",
+    "model_root": "./model/",
+    "ratio": [0.1, 0.9],
+    "cross_domain_targets":
+        {
+            "1":
+            {"idom": "Movies_and_TV",
+            "jdom": "CDs_and_Vinyl",
+            "kdom": "Books",
+            "co_user_num": 8564,
+            "uid_idom": 123960,
+            "uid_jdom": 75258,
+            "uid_kdom": 603668,
+            "iid_idom": 50052,
+            "iid_jdom": 64443,
+            "iid_kdom": 367982,
+            "batchsize_src": 256,
+            "batchsize_tgt": 256,
+            "batchsize_test": 512
+            },
+            "2":
+            {"idom": "Sports_and_Outdoors",
+            "jdom": "Video_Games",
+            "kdom": "Electronics",
+            "co_user_num": 1192,
+            "uid_idom": 35598,
+            "uid_jdom": 24303,
+            "uid_kdom": 192403,
+            "iid_idom": 18357,
+            "iid_jdom": 10672,
+            "iid_kdom": 63001,
+            "batchsize_src": 256,
+            "batchsize_tgt": 256,
+            "batchsize_test": 512
+            },
+            "3":
+            {"src": "Books",
+            "tgt": "CDs_and_Vinyl",
+            "co_user_num": 16738,
+            "uid_src": 603668,
+            "iid_src":367982,
+            "uid_tgt": 75258,
+            "iid_tgt": 64443,
+            "batchsize_src": 512,
+            "batchsize_tgt": 512,
+            "batchsize_meta": 512,
+            "batchsize_map": 128,
+            "batchsize_test": 256
+            },
+            "4":
+            {"src": "CDs_and_Vinyl",
+            "tgt": "Movies_and_TV",
+            "co_user_num": 18031,
+            "uid_src": 75258,
+            "iid_src":64443,
+            "uid_tgt": 123960,
+            "iid_tgt": 50052,
+            "batchsize_src": 256,
+            "batchsize_tgt": 256,
+            "batchsize_meta": 1024,
+            "batchsize_map": 128,
+            "batchsize_test": 512
+            }
+        },
+    "emb_dim": 32,
+    "num_fields": 2,
+    "wd": 0
+    }
